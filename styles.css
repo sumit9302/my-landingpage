@@ -1,0 +1,200 @@
+/* General styles */
+body, html {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+    background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.2)), url('bank-card-coin-withdrawal-money-money-payment-symbol-vector-illustration_587448-912.avif') no-repeat center center fixed;
+    background-size: cover;
+    color: white;
+}
+
+header {
+    width: 100%;
+    height: 100vh;
+    padding: 1rem 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+}
+
+.logo {
+    font-size: 2em;
+    letter-spacing: 2px;
+}
+
+.menu a {
+    text-decoration: none;
+    color: white;
+    padding: 10px 20px;
+    font-size: 20px;
+    position: relative;
+}
+
+.menu a::before {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    width: 0;
+    height: 2px;
+    background: indianred;
+    transition: width 0.4s ease, left 0.4s ease;
+}
+
+.menu a:hover::before {
+    width: 100%;
+    left: 0;
+}
+
+.register a {
+    text-decoration: none;
+    color: white;
+    padding: 10px 20px;
+    font-size: 20px;
+    background: indianred;
+    border-radius: 8px;
+    transition: 0.4s;
+}
+
+.register a:hover {
+    background: transparent;
+    border: 1px solid indianred;
+}
+
+.hero-text {
+    max-width: 650px;
+    text-align: center;
+    padding: 2rem;
+    background: rgba(0, 0, 0, 0.6);
+    border-radius: 10px;
+    margin-top: 20vh;
+}
+
+.hero-text span {
+    letter-spacing: 3px;
+}
+
+.hero-text h1 {
+    font-size: 2.5em;
+    margin: 1rem 0;
+}
+
+.hero-text a {
+    text-decoration: none;
+    color: white;
+    padding: 10px 20px;
+    font-size: 20px;
+    background: indianred;
+    letter-spacing: 5px;
+    border-radius: 8px;
+    transition: 0.4s;
+}
+
+.hero-text a:hover {
+    background: transparent;
+    border: 1px solid indianred;
+}
+
+main {
+    text-align: center;
+    padding: 2rem 1rem;
+}
+
+.blurred-box {
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    margin: 2rem auto;
+    padding: 2rem;
+    border-radius: 10px;
+    max-width: 800px;
+    color: white;
+}
+
+#features, #testimonials, #contact, #transfer {
+    padding: 3rem 1rem;
+}
+
+#features h2, #testimonials h2, #contact h2, #transfer h2 {
+    font-size: 2rem;
+    margin-bottom: 1.5rem;
+}
+
+.feature, .testimonial {
+    margin-bottom: 1.5rem;
+}
+
+#transfer-form, #contact-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#transfer-form label, #contact-form label {
+    margin-top: 0.5rem;
+    font-weight: bold;
+}
+
+#transfer-form input, #contact-form input, #transfer-form textarea, #contact-form textarea {
+    width: 80%;
+    padding: 0.5rem;
+    margin-top: 0.25rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+#transfer-form button, #contact-form button {
+    padding: 0.75rem 2rem;
+    border: none;
+    border-radius: 5px;
+    background-color: #333;
+    color: white;
+    cursor: pointer;
+    margin-top: 1rem;
+}
+
+#transfer-form button:hover, #contact-form button:hover {
+    background-color: #555;
+}
+
+footer {
+    background-color: rgba(0, 0, 0, 0.8);
+    color: white;
+    text-align: center;
+    padding: 1rem 0;
+}
+
+footer .footer-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 1rem;
+}
+
+footer .social-media a {
+    color: white;
+    text-decoration: none;
+    margin: 0 0.5rem;
+}
+
+footer .social-media a:hover {
+    text-decoration: underline;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+    nav {
+        flex-direction: column;
+        text-align: center;
+    }
